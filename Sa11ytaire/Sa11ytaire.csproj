@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <EnableTypeInfoReflection>false</EnableTypeInfoReflection>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{EF779E6C-E216-4A31-B0A5-7D663B5A90F9}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sol4All</RootNamespace>
+    <AssemblyName>Sa11ytaire</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17134.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.17134.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+    <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <AppInstallerUpdateFrequency>1</AppInstallerUpdateFrequency>
+    <AppInstallerCheckForUpdateFrequency>OnApplicationRun</AppInstallerCheckForUpdateFrequency>
+    <PackageCertificateThumbprint>9B1F6A51A0C9900FE4102CA54357F9220C7AE2FB</PackageCertificateThumbprint>
+    <PackageCertificateKeyFile>Sol4All_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    <EnableGatekeeperAnalysis>false</EnableGatekeeperAnalysis>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AzureCognitiveServices\BingSearch.cs" />
+    <Compile Include="AzureCognitiveServices\Bot.cs" />
+    <Compile Include="AzureCognitiveServices\LUIS.cs" />
+    <Compile Include="AzureCognitiveServices\SpeechService.cs" />
+    <Compile Include="AzureCognitiveServices\TextToSpeechService.cs" />
+    <Compile Include="AzureCognitiveServices\VisionService.cs" />
+    <Compile Include="AzureSpeech.cs" />
+    <Compile Include="Classes\Card.cs" />
+    <Compile Include="Classes\CardListView.cs" />
+    <Compile Include="Classes\CardPileToggleButton.cs" />
+    <Compile Include="Classes\NextCardPileButton.cs" />
+    <Compile Include="Classes\Notifications.cs" />
+    <Compile Include="Classes\Shuffler.cs" />
+    <Compile Include="Classes\Converters.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPageCardAction.cs" />
+    <Compile Include="MainPageHint.cs" />
+    <Compile Include="MainPageAccessKeys.cs" />
+    <Compile Include="MainPageScan.xaml.cs" />
+    <Compile Include="Classes\PlayingCard.cs" />
+    <Compile Include="MapAccessKeysDialog.xaml.cs">
+      <DependentUpon>MapAccessKeysDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\PlayingCardViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="Assets\contrast-black\Cards\CardBack.png" />
+    <Content Include="Assets\contrast-black\Cards\ClubsAce.png" />
+    <Content Include="Assets\contrast-black\Cards\ClubsEight.png" />
+    <Content Include="Assets\contrast-black\Cards\ClubsFive.png" />
+    <Content Include="Assets\contrast-black\Cards\ClubsFour.png" />
+    <Content Include="Assets\contrast-black\Cards\ClubsJack.png" />
+    <Content Include="Assets\contrast-black\Cards\ClubsKing.png" />
+    <Content Include="Assets\contrast-black\Cards\ClubsNine.png" />
+    <Content Include="Assets\contrast-black\Cards\ClubsQueen.png" />
+    <Content Include="Assets\contrast-black\Cards\ClubsSeven.png" />
+    <Content Include="Assets\contrast-black\Cards\ClubsSix.png" />
+    <Content Include="Assets\contrast-black\Cards\ClubsTen.png" />
+    <Content Include="Assets\contrast-black\Cards\ClubsThree.png" />
+    <Content Include="Assets\contrast-black\Cards\ClubsTwo.png" />
+    <Content Include="Assets\contrast-black\Cards\DiamondsAce.png" />
+    <Content Include="Assets\contrast-black\Cards\DiamondsEight.png" />
+    <Content Include="Assets\contrast-black\Cards\DiamondsFive.png" />
+    <Content Include="Assets\contrast-black\Cards\DiamondsFour.png" />
+    <Content Include="Assets\contrast-black\Cards\DiamondsJack.png" />
+    <Content Include="Assets\contrast-black\Cards\DiamondsKing.png" />
+    <Content Include="Assets\contrast-black\Cards\DiamondsNine.png" />
+    <Content Include="Assets\contrast-black\Cards\DiamondsQueen.png" />
+    <Content Include="Assets\contrast-black\Cards\DiamondsSeven.png" />
+    <Content Include="Assets\contrast-black\Cards\DiamondsSix.png" />
+    <Content Include="Assets\contrast-black\Cards\DiamondsTen.png" />
+    <Content Include="Assets\contrast-black\Cards\DiamondsThree.png" />
+    <Content Include="Assets\contrast-black\Cards\DiamondsTwo.png" />
+    <Content Include="Assets\contrast-black\Cards\EmptyDealtCardPile.png" />
+    <Content Include="Assets\contrast-black\Cards\EmptyTargetCardPileClubs.png" />
+    <Content Include="Assets\contrast-black\Cards\EmptyTargetCardPileDiamonds.png" />
+    <Content Include="Assets\contrast-black\Cards\EmptyTargetCardPileHearts.png" />
+    <Content Include="Assets\contrast-black\Cards\EmptyTargetCardPileSpades.png" />
+    <Content Include="Assets\contrast-black\Cards\HeartsAce.png" />
+    <Content Include="Assets\contrast-black\Cards\HeartsEight.png" />
+    <Content Include="Assets\contrast-black\Cards\HeartsFive.png" />
+    <Content Include="Assets\contrast-black\Cards\HeartsFour.png" />
+    <Content Include="Assets\contrast-black\Cards\HeartsJack.png" />
+    <Content Include="Assets\contrast-black\Cards\HeartsKing.png" />
+    <Content Include="Assets\contrast-black\Cards\HeartsNine.png" />
+    <Content Include="Assets\contrast-black\Cards\HeartsQueen.png" />
+    <Content Include="Assets\contrast-black\Cards\HeartsSeven.png" />
+    <Content Include="Assets\contrast-black\Cards\HeartsSix.png" />
+    <Content Include="Assets\contrast-black\Cards\HeartsTen.png" />
+    <Content Include="Assets\contrast-black\Cards\HeartsThree.png" />
+    <Content Include="Assets\contrast-black\Cards\HeartsTwo.png" />
+    <Content Include="Assets\contrast-black\Cards\SpadesAce.png" />
+    <Content Include="Assets\contrast-black\Cards\SpadesEight.png" />
+    <Content Include="Assets\contrast-black\Cards\SpadesFive.png" />
+    <Content Include="Assets\contrast-black\Cards\SpadesFour.png" />
+    <Content Include="Assets\contrast-black\Cards\SpadesJack.png" />
+    <Content Include="Assets\contrast-black\Cards\SpadesKing.png" />
+    <Content Include="Assets\contrast-black\Cards\SpadesNine.png" />
+    <Content Include="Assets\contrast-black\Cards\SpadesQueen.png" />
+    <Content Include="Assets\contrast-black\Cards\SpadesSeven.png" />
+    <Content Include="Assets\contrast-black\Cards\SpadesSix.png" />
+    <Content Include="Assets\contrast-black\Cards\SpadesTen.png" />
+    <Content Include="Assets\contrast-black\Cards\SpadesThree.png" />
+    <Content Include="Assets\contrast-black\Cards\SpadesTwo.png" />
+    <Content Include="Assets\contrast-black\SplashScreen.scale-200.png" />
+    <Content Include="Assets\contrast-standard\Cards\CardBack.png" />
+    <Content Include="Assets\contrast-standard\Cards\ClubsAce.png" />
+    <Content Include="Assets\contrast-standard\Cards\ClubsEight.png" />
+    <Content Include="Assets\contrast-standard\Cards\ClubsFive.png" />
+    <Content Include="Assets\contrast-standard\Cards\ClubsFour.png" />
+    <Content Include="Assets\contrast-standard\Cards\ClubsJack.png" />
+    <Content Include="Assets\contrast-standard\Cards\ClubsKing.png" />
+    <Content Include="Assets\contrast-standard\Cards\ClubsNine.png" />
+    <Content Include="Assets\contrast-standard\Cards\ClubsQueen.png" />
+    <Content Include="Assets\contrast-standard\Cards\ClubsSeven.png" />
+    <Content Include="Assets\contrast-standard\Cards\ClubsSix.png" />
+    <Content Include="Assets\contrast-standard\Cards\ClubsTen.png" />
+    <Content Include="Assets\contrast-standard\Cards\ClubsThree.png" />
+    <Content Include="Assets\contrast-standard\Cards\ClubsTwo.png" />
+    <Content Include="Assets\contrast-standard\Cards\DiamondsAce.png" />
+    <Content Include="Assets\contrast-standard\Cards\DiamondsEight.png" />
+    <Content Include="Assets\contrast-standard\Cards\DiamondsFive.png" />
+    <Content Include="Assets\contrast-standard\Cards\DiamondsFour.png" />
+    <Content Include="Assets\contrast-standard\Cards\DiamondsJack.png" />
+    <Content Include="Assets\contrast-standard\Cards\DiamondsKing.png" />
+    <Content Include="Assets\contrast-standard\Cards\DiamondsNine.png" />
+    <Content Include="Assets\contrast-standard\Cards\DiamondsQueen.png" />
+    <Content Include="Assets\contrast-standard\Cards\DiamondsSeven.png" />
+    <Content Include="Assets\contrast-standard\Cards\DiamondsSix.png" />
+    <Content Include="Assets\contrast-standard\Cards\DiamondsTen.png" />
+    <Content Include="Assets\contrast-standard\Cards\DiamondsThree.png" />
+    <Content Include="Assets\contrast-standard\Cards\DiamondsTwo.png" />
+    <Content Include="Assets\contrast-standard\Cards\EmptyDealtCardPile.png" />
+    <Content Include="Assets\contrast-standard\Cards\EmptyTargetCardPileClubs.png" />
+    <Content Include="Assets\contrast-standard\Cards\EmptyTargetCardPileDiamonds.png" />
+    <Content Include="Assets\contrast-standard\Cards\EmptyTargetCardPileHearts.png" />
+    <Content Include="Assets\contrast-standard\Cards\EmptyTargetCardPileSpades.png" />
+    <Content Include="Assets\contrast-standard\Cards\HeartsAce.png" />
+    <Content Include="Assets\contrast-standard\Cards\HeartsEight.png" />
+    <Content Include="Assets\contrast-standard\Cards\HeartsFive.png" />
+    <Content Include="Assets\contrast-standard\Cards\HeartsFour.png" />
+    <Content Include="Assets\contrast-standard\Cards\HeartsJack.png" />
+    <Content Include="Assets\contrast-standard\Cards\HeartsKing.png" />
+    <Content Include="Assets\contrast-standard\Cards\HeartsNine.png" />
+    <Content Include="Assets\contrast-standard\Cards\HeartsQueen.png" />
+    <Content Include="Assets\contrast-standard\Cards\HeartsSeven.png" />
+    <Content Include="Assets\contrast-standard\Cards\HeartsSix.png" />
+    <Content Include="Assets\contrast-standard\Cards\HeartsTen.png" />
+    <Content Include="Assets\contrast-standard\Cards\HeartsThree.png" />
+    <Content Include="Assets\contrast-standard\Cards\HeartsTwo.png" />
+    <Content Include="Assets\contrast-standard\Cards\SpadesAce.png" />
+    <Content Include="Assets\contrast-standard\Cards\SpadesEight.png" />
+    <Content Include="Assets\contrast-standard\Cards\SpadesFive.png" />
+    <Content Include="Assets\contrast-standard\Cards\SpadesFour.png" />
+    <Content Include="Assets\contrast-standard\Cards\SpadesJack.png" />
+    <Content Include="Assets\contrast-standard\Cards\SpadesKing.png" />
+    <Content Include="Assets\contrast-standard\Cards\SpadesNine.png" />
+    <Content Include="Assets\contrast-standard\Cards\SpadesQueen.png" />
+    <Content Include="Assets\contrast-standard\Cards\SpadesSeven.png" />
+    <Content Include="Assets\contrast-standard\Cards\SpadesSix.png" />
+    <Content Include="Assets\contrast-standard\Cards\SpadesTen.png" />
+    <Content Include="Assets\contrast-standard\Cards\SpadesThree.png" />
+    <Content Include="Assets\contrast-standard\Cards\SpadesTwo.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\CardBack.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\ClubsAce.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\ClubsEight.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\ClubsFive.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\ClubsFour.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\ClubsJack.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\ClubsKing.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\ClubsNine.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\ClubsQueen.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\ClubsSeven.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\ClubsSix.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\ClubsTen.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\ClubsThree.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\ClubsTwo.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\DiamondsAce.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\DiamondsEight.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\DiamondsFive.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\DiamondsFour.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\DiamondsJack.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\DiamondsKing.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\DiamondsNine.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\DiamondsQueen.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\DiamondsSeven.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\DiamondsSix.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\DiamondsTen.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\DiamondsThree.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\DiamondsTwo.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\EmptyDealtCardPile.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\EmptyTargetCardPileClubs.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\EmptyTargetCardPileDiamonds.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\EmptyTargetCardPileHearts.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\EmptyTargetCardPileSpades.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\HeartsAce.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\HeartsEight.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\HeartsFive.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\HeartsFour.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\HeartsJack.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\HeartsKing.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\HeartsNine.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\HeartsQueen.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\HeartsSeven.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\HeartsSix.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\HeartsTen.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\HeartsThree.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\HeartsTwo.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\SpadesAce.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\SpadesEight.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\SpadesFive.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\SpadesFour.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\SpadesJack.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\SpadesKing.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\SpadesNine.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\SpadesQueen.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\SpadesSeven.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\SpadesSix.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\SpadesTen.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\SpadesThree.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\Cards\SpadesTwo.png" />
+    <Content Include="Assets\contrast-standard\theme-dark\SplashScreen.scale-200.png" />
+    <Content Include="Assets\contrast-white\Cards\CardBack.png" />
+    <Content Include="Assets\contrast-white\Cards\ClubsAce.png" />
+    <Content Include="Assets\contrast-white\Cards\ClubsEight.png" />
+    <Content Include="Assets\contrast-white\Cards\ClubsFive.png" />
+    <Content Include="Assets\contrast-white\Cards\ClubsFour.png" />
+    <Content Include="Assets\contrast-white\Cards\ClubsJack.png" />
+    <Content Include="Assets\contrast-white\Cards\ClubsKing.png" />
+    <Content Include="Assets\contrast-white\Cards\ClubsNine.png" />
+    <Content Include="Assets\contrast-white\Cards\ClubsQueen.png" />
+    <Content Include="Assets\contrast-white\Cards\ClubsSeven.png" />
+    <Content Include="Assets\contrast-white\Cards\ClubsSix.png" />
+    <Content Include="Assets\contrast-white\Cards\ClubsTen.png" />
+    <Content Include="Assets\contrast-white\Cards\ClubsThree.png" />
+    <Content Include="Assets\contrast-white\Cards\ClubsTwo.png" />
+    <Content Include="Assets\contrast-white\Cards\DiamondsAce.png" />
+    <Content Include="Assets\contrast-white\Cards\DiamondsEight.png" />
+    <Content Include="Assets\contrast-white\Cards\DiamondsFive.png" />
+    <Content Include="Assets\contrast-white\Cards\DiamondsFour.png" />
+    <Content Include="Assets\contrast-white\Cards\DiamondsJack.png" />
+    <Content Include="Assets\contrast-white\Cards\DiamondsKing.png" />
+    <Content Include="Assets\contrast-white\Cards\DiamondsNine.png" />
+    <Content Include="Assets\contrast-white\Cards\DiamondsQueen.png" />
+    <Content Include="Assets\contrast-white\Cards\DiamondsSeven.png" />
+    <Content Include="Assets\contrast-white\Cards\DiamondsSix.png" />
+    <Content Include="Assets\contrast-white\Cards\DiamondsTen.png" />
+    <Content Include="Assets\contrast-white\Cards\DiamondsThree.png" />
+    <Content Include="Assets\contrast-white\Cards\DiamondsTwo.png" />
+    <Content Include="Assets\contrast-white\Cards\EmptyDealtCardPile.png" />
+    <Content Include="Assets\contrast-white\Cards\EmptyTargetCardPileClubs.png" />
+    <Content Include="Assets\contrast-white\Cards\EmptyTargetCardPileDiamonds.png" />
+    <Content Include="Assets\contrast-white\Cards\EmptyTargetCardPileHearts.png" />
+    <Content Include="Assets\contrast-white\Cards\EmptyTargetCardPileSpades.png" />
+    <Content Include="Assets\contrast-white\Cards\HeartsAce.png" />
+    <Content Include="Assets\contrast-white\Cards\HeartsEight.png" />
+    <Content Include="Assets\contrast-white\Cards\HeartsFive.png" />
+    <Content Include="Assets\contrast-white\Cards\HeartsFour.png" />
+    <Content Include="Assets\contrast-white\Cards\HeartsJack.png" />
+    <Content Include="Assets\contrast-white\Cards\HeartsKing.png" />
+    <Content Include="Assets\contrast-white\Cards\HeartsNine.png" />
+    <Content Include="Assets\contrast-white\Cards\HeartsQueen.png" />
+    <Content Include="Assets\contrast-white\Cards\HeartsSeven.png" />
+    <Content Include="Assets\contrast-white\Cards\HeartsSix.png" />
+    <Content Include="Assets\contrast-white\Cards\HeartsTen.png" />
+    <Content Include="Assets\contrast-white\Cards\HeartsThree.png" />
+    <Content Include="Assets\contrast-white\Cards\HeartsTwo.png" />
+    <Content Include="Assets\contrast-white\Cards\SpadesAce.png" />
+    <Content Include="Assets\contrast-white\Cards\SpadesEight.png" />
+    <Content Include="Assets\contrast-white\Cards\SpadesFive.png" />
+    <Content Include="Assets\contrast-white\Cards\SpadesFour.png" />
+    <Content Include="Assets\contrast-white\Cards\SpadesJack.png" />
+    <Content Include="Assets\contrast-white\Cards\SpadesKing.png" />
+    <Content Include="Assets\contrast-white\Cards\SpadesNine.png" />
+    <Content Include="Assets\contrast-white\Cards\SpadesQueen.png" />
+    <Content Include="Assets\contrast-white\Cards\SpadesSeven.png" />
+    <Content Include="Assets\contrast-white\Cards\SpadesSix.png" />
+    <Content Include="Assets\contrast-white\Cards\SpadesTen.png" />
+    <Content Include="Assets\contrast-white\Cards\SpadesThree.png" />
+    <Content Include="Assets\contrast-white\Cards\SpadesTwo.png" />
+    <Content Include="Assets\contrast-white\SplashScreen.scale-200.png" />
+    <Content Include="Assets\HelpContent_files\image002.jpg" />
+    <Content Include="Assets\Sa11y.png" />
+    <Content Include="License.txt" />
+    <Content Include="ReadMe.txt" />
+    <PRIResource Include="Strings\kn-in\Resources.resw">
+      <SubType>Designer</SubType>
+    </PRIResource>
+    <PRIResource Include="Strings\fr-fr\Resources.resw">
+      <SubType>Designer</SubType>
+    </PRIResource>
+    <PRIResource Include="Strings\en-us\Resources.resw">
+      <SubType>Designer</SubType>
+    </PRIResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\HelpContent.htm" />
+    <Content Include="Assets\InvalidFile.wav" />
+    <Content Include="Assets\SuccessFile.wav" />
+    <Content Include="Assets\ThatDidntWork.m4a" />
+    <Content Include="Assets\WellDone.m4a" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\contrast-standard\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MapAccessKeysDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime">
+      <Version>2.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.ComputerVision">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction">
+      <Version>1.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Bot.Connector.DirectLine">
+      <Version>3.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CognitiveServices.Speech">
+      <Version>1.6.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.9</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Xbox.Live.SDK.WinRT.UWP">
+      <Version>2018.6.20181010.2</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3-beta1</Version>
+    </PackageReference>
+    <PackageReference Include="WebSocketSharp">
+      <Version>1.0.3-rc11</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

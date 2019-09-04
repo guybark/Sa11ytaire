@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CardDeckUpturnedObscuredHigher.AutomationProperties.HelpText" xml:space="preserve">
+    <value>Second from top upturned card</value>
+  </data>
+  <data name="CardDeckUpturnedObscuredLower.AutomationProperties.HelpText" xml:space="preserve">
+    <value>Third from top upturned card</value>
+  </data>
+  <data name="CardPile1.AutomationProperties.Name" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ ರಾಶಿ ಒಂದು</value>
+  </data>
+  <data name="CardPile2.AutomationProperties.Name" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ ರಾಶಿ ಎರಡು</value>
+  </data>
+  <data name="CardPile3.AutomationProperties.Name" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ ರಾಶಿ ಮೂರು</value>
+  </data>
+  <data name="CardPile4.AutomationProperties.Name" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ ರಾಶಿ ನಾಲ್ಕು</value>
+  </data>
+  <data name="CardPile5.AutomationProperties.Name" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ ರಾಶಿ ಐದು</value>
+  </data>
+  <data name="CardPile6.AutomationProperties.Name" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ ರಾಶಿ ಆರು</value>
+  </data>
+  <data name="CardPile7.AutomationProperties.Name" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ ರಾಶಿ ಏಳು</value>
+  </data>
+  <data name="endOfGameDialog.Content" xml:space="preserve">
+    <value>ಅಭಿನಂದನೆಗಳು, ನೀವು ಗೆದ್ದಿದ್ದೀರಿ! ಹೊಸ ಆಟವನ್ನು ಪ್ರಾರಂಭಿಸಲು ಎಂಟರ್ ಒತ್ತಿರಿ.</value>
+  </data>
+  <data name="endOfGameDialog.PrimaryButtonText" xml:space="preserve">
+    <value>ಆಟವನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿ</value>
+  </data>
+  <data name="endOfGameDialog.SecondaryButtonText" xml:space="preserve">
+    <value>ಆಟ ನಿರ್ಗಮಿಸಿ</value>
+  </data>
+  <data name="endOfGameDialog.Title" xml:space="preserve">
+    <value>ಆಟ ಮುಕ್ತಾಯ</value>
+  </data>
+  <data name="LaunchHelpButton.Content" xml:space="preserve">
+    <value>ಸಹಾಯವನ್ನು ಪ್ರಾರಂಭಿಸಿ</value>
+  </data>
+  <data name="NextCardPile.AutomationProperties.FullDescription" xml:space="preserve">
+    <value>ಉಳಿದಿರುವ ಕಾರ್ಡ್ಗಳ ಪೈಲ್, ಕೆಳಮುಖವಾಗಿ</value>
+  </data>
+  <data name="PlaySoundEffectsCheckBox.Content" xml:space="preserve">
+    <value>ಧ್ವನಿ ಪರಿಣಾಮಗಳು</value>
+  </data>
+  <data name="PlayTTSNotificationsCheckBox.Content" xml:space="preserve">
+    <value>ಅಧಿಸೂಚನೆ ಆಡಿಯೋ</value>
+  </data>
+  <data name="RestartGameButton.Content" xml:space="preserve">
+    <value>ಆಟವನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿ</value>
+  </data>
+  <data name="SwitchScanSpeedLabel.Text" xml:space="preserve">
+    <value>Switch control highlight speed:</value>
+  </data>
+  <data name="ClubsPile" xml:space="preserve">
+    <value>ಕ್ಲಬ್ ರಾಶಿಗಳು</value>
+  </data>
+  <data name="DiamondsPile" xml:space="preserve">
+    <value>ಡೈಮಂಡ್ಸ್ ಪೈಲ್</value>
+  </data>
+  <data name="HeartsPile" xml:space="preserve">
+    <value>ಹಾರ್ಟ್ಸ್ ರಾಶಿ</value>
+  </data>
+  <data name="SpadesPile" xml:space="preserve">
+    <value>ಸ್ಪೇಡ್ಸ್ ರಾಶಿ</value>
+  </data>
+  <data name="ShowNotificationWindowCheckBox.Content" xml:space="preserve">
+    <value>ಇತ್ತೀಚಿನ ಪ್ರಕಟಣೆ</value>
+  </data>
+  <data name="MostRecentNotificationTextBox.AutomationProperties.Name" xml:space="preserve">
+    <value>ತೀರಾ ಇತ್ತೀಚಿನ ಅಧಿಸೂಚನೆ</value>
+  </data>
+  <data name="DealtCardPilesScrollViewer.AutomationProperties.Name" xml:space="preserve">
+    <value>ವ್ಯವಹರಿಸಿದ ಕಾರ್ಡ್ ರಾಶಿಗಳು</value>
+  </data>
+  <data name="DealtCardPilesScrollViewer.AutomationProperties.LocalizedLandmarkType" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ಗಳು</value>
+  </data>
+  <data name="EnableAutomaticHintsCheckBox.AutomationProperties.Name" xml:space="preserve">
+    <value>ಸ್ವಯಂಚಾಲಿತ ಸುಳಿವುಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ</value>
+  </data>
+  <data name="EnableAutomaticHintsCheckBox.Content" xml:space="preserve">
+    <value>ಸ್ವಯಂಚಾಲಿತ ಸುಳಿವುಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ</value>
+  </data>
+  <data name="TargetPilesLandmark.AutomationProperties.Name" xml:space="preserve">
+    <value>Target card piles</value>
+  </data>
+  <data name="TargetPilesLandmark.AutomationProperties.LocalizedLandmarkType" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ಗಳು</value>
+  </data>
+  <data name="TopCornerPilesLandmark.AutomationProperties.Name" xml:space="preserve">
+    <value>ಉಳಿದಿರುವ ಕಾರ್ಡ್ ರಾಶಿಗಳು</value>
+  </data>
+  <data name="TopCornerPilesLandmark.AutomationProperties.LocalizedLandmarkType" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ಗಳು</value>
+  </data>
+  <data name="CardDeckUpturned.AutomationProperties.HelpText" xml:space="preserve">
+    <value>ಬಹು ಮೇಲ್ಭಾಗದಲ್ಲಿ ಮಗುಚಿಬಿದ್ಧ ಕಾರ್ಡ್</value>
+  </data>
+  <data name="SingleKeyToMoveTextBlock.Text" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ ಸರಿಸಲು ಏಕೈಕ ಕೀ.</value>
+  </data>
+  <data name="SelectWithoutAltKey.Text" xml:space="preserve">
+    <value>ಆಲ್ಟ್ ಕೀ ಇಲ್ಲದ ಕಾರ್ಡ್ ಆಯ್ಕೆ ಮಾಡಿ.</value>
+  </data>
+  <data name="SetAccessKeyMapping.Content" xml:space="preserve">
+    <value>Set access key mapping</value>
+  </data>
+  <data name="CancelButton.Content" xml:space="preserve">
+    <value>ರದ್ದುಮಾಡಿ</value>
+  </data>
+  <data name="RestoreDefaultsButton.AccessKey" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="RestoreDefaultsButton.Content" xml:space="preserve">
+    <value>ಮತ್ತೆ ಮೊದಲಂತೆ ಮಾಡು</value>
+  </data>
+  <data name="SetButton.Content" xml:space="preserve">
+    <value>ಸೆಟ್</value>
+  </data>
+  <data name="MapAccessKeysPrimaryButtonText" xml:space="preserve">
+    <value>ಸೆಟ್</value>
+  </data>
+  <data name="MapAccessKeysSecondaryButtonText" xml:space="preserve">
+    <value>ರದ್ದುಮಾಡಿ</value>
+  </data>
+  <data name="MapAccessKeysTitle" xml:space="preserve">
+    <value>Set access keys to use in Sa11ytaire</value>
+  </data>
+  <data name="queryDialog.CloseButtonText" xml:space="preserve">
+    <value>ಇಲ್ಲ</value>
+  </data>
+  <data name="queryDialog.Content" xml:space="preserve">
+    <value>ಆಟ ಮರುಪ್ರಾರಂಭಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?</value>
+  </data>
+  <data name="queryDialog.PrimaryButtonText" xml:space="preserve">
+    <value>ಹೌದು</value>
+  </data>
+  <data name="queryDialog.Title" xml:space="preserve">
+    <value>ಆಟವನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿ</value>
+  </data>
+  <data name="NextCardPile_NextCard" xml:space="preserve">
+    <value>ಮುಂದಿನ ಕಾರ್ಡ್</value>
+  </data>
+  <data name="NextCardPile_TurnOverCards" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ಗಳನ್ನು ತಿರುಗಿಸಿ</value>
+  </data>
+  <data name="PlayerSignIn.Content" xml:space="preserve">
+    <value>ಸೈನ್ ಇನ್ ಮಾಡಿ</value>
+  </data>
+  <data name="SigningIn" xml:space="preserve">
+    <value>ಸೈನ್ ಇನ್ ಮಾಡಲಾಗುತ್ತಿದೆ</value>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>ಖಾಲಿ</value>
+  </data>
+  <data name="FaceDown" xml:space="preserve">
+    <value>ಕೆಳಮುಖವಾಗಿ</value>
+  </data>
+  <data name="CanBeMovedToDealtCardPile" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ ರಾಶಿಯನ್ನು ನಿರ್ವಹಿಸಲು ಸರಿಸಲಾಗುವುದು</value>
+  </data>
+  <data name="NoMoveIsAvailable" xml:space="preserve">
+    <value>ಯಾವುದೇ ಚಲನೆ ಲಭ್ಯವಿಲ್ಲ.</value>
+  </data>
+  <data name="InDealtCardPile" xml:space="preserve">
+    <value>ರಾಶಿಯಲ್ಲಿದೆ</value>
+  </data>
+  <data name="MoreCardsAreAvailable" xml:space="preserve">
+    <value>ಹೆಚ್ಚಿನ ಕಾರ್ಡುಗಳು ತಿರುವಿಹಾಕಲು ಲಭ್ಯವಿದೆ</value>
+  </data>
+  <data name="NoCardLeft" xml:space="preserve">
+    <value>ಉಳಿದ ಕಾರ್ಡುಗಳ ರಾಶಿಯಲ್ಲಿ ಯಾವುದೇ ಕಾರ್ಡ್ಗಳು ಉಳಿದಿಲ್ಲ</value>
+  </data>
+  <data name="Off" xml:space="preserve">
+    <value>ಆರಿಸು</value>
+  </data>
+  <data name="On" xml:space="preserve">
+    <value>ಆನ್</value>
+  </data>
+  <data name="OnTop" xml:space="preserve">
+    <value>ಅದರ ಮೇಲೆ</value>
+  </data>
+  <data name="Revealed" xml:space="preserve">
+    <value>ಬಹಿರಂಗ</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>ಆಯ್ಕೆಮಾಡಲಾಗಿದೆ</value>
+  </data>
+  <data name="SwitchControl" xml:space="preserve">
+    <value>Switch control is now</value>
+  </data>
+  <data name="TargetPiles" xml:space="preserve">
+    <value>Target piles</value>
+  </data>
+  <data name="Then" xml:space="preserve">
+    <value>ನಂತರ</value>
+  </data>
+  <data name="ThereAreNoUpturnedCards" xml:space="preserve">
+    <value>There are no upturned cards available</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>ಗೆ</value>
+  </data>
+  <data name="TopUpturnedCardIs" xml:space="preserve">
+    <value>ಮೇಲ್ಭಾಗದಲ್ಲಿ ಮಗುಚಿಬಿದ್ಧ ಕಾರ್ಡ್</value>
+  </data>
+  <data name="Upturned" xml:space="preserve">
+    <value>ಮೇಲೆ ತಿರುಗಿತು</value>
+  </data>
+  <data name="AccessKeyClubsPileLabel.Text" xml:space="preserve">
+    <value>ಕ್ಲಬ್ ರಾಶಿಗಳು:</value>
+  </data>
+  <data name="AccessKeyDealtCardPile1Label.Text" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ ರಾಶಿ ಒಂದು:</value>
+  </data>
+  <data name="AccessKeyDealtCardPile2Label.Text" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ ರಾಶಿ ಎರಡು:</value>
+  </data>
+  <data name="AccessKeyDealtCardPile3Label.Text" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ ರಾಶಿ ಮೂರು:</value>
+  </data>
+  <data name="AccessKeyDealtCardPile4Label.Text" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ ರಾಶಿ ನಾಲ್ಕು:</value>
+  </data>
+  <data name="AccessKeyDealtCardPile5Label.Text" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ ರಾಶಿ ಐದು:</value>
+  </data>
+  <data name="AccessKeyDealtCardPile6Label.Text" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ ರಾಶಿ ಆರು:</value>
+  </data>
+  <data name="AccessKeyDealtCardPile7Label.Text" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ ರಾಶಿ ಏಳು:</value>
+  </data>
+  <data name="AccessKeyDiamondsPileLabel.Text" xml:space="preserve">
+    <value>ಡೈಮಂಡ್ಸ್ ಪೈಲ್:</value>
+  </data>
+  <data name="AccessKeyHeartsPileLabel.Text" xml:space="preserve">
+    <value>ಹಾರ್ಟ್ಸ್ ರಾಶಿ:</value>
+  </data>
+  <data name="AccessKeyNextCardLabel.Text" xml:space="preserve">
+    <value>ಮುಂದಿನ ಕಾರ್ಡ್:</value>
+  </data>
+  <data name="AccessKeySpadesPileLabel.Text" xml:space="preserve">
+    <value>ಸ್ಪೇಡ್ಸ್ ರಾಶಿ:</value>
+  </data>
+  <data name="AccessKeyUpturnedCardLabel.Text" xml:space="preserve">
+    <value>ಮೇಲೆ ತಿರುಗಿದ ಕಾರ್ಡ್</value>
+  </data>
+  <data name="SwitchControlOnTextBlock" xml:space="preserve">
+    <value>Switch control on.</value>
+  </data>
+  <data name="Ace" xml:space="preserve">
+    <value>ಏಸ್</value>
+  </data>
+  <data name="Jack" xml:space="preserve">
+    <value>ಜ್ಯಾಕ್</value>
+  </data>
+  <data name="King" xml:space="preserve">
+    <value>ರಾಜ</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>ಆಫ್</value>
+  </data>
+  <data name="Queen" xml:space="preserve">
+    <value>ರಾಣಿ</value>
+  </data>
+  <data name="8" xml:space="preserve">
+    <value>ಎಂಟು</value>
+  </data>
+  <data name="5" xml:space="preserve">
+    <value>ಐದು</value>
+  </data>
+  <data name="4" xml:space="preserve">
+    <value>ನಾಲ್ಕು</value>
+  </data>
+  <data name="9" xml:space="preserve">
+    <value>ಒಂಬತ್ತು</value>
+  </data>
+  <data name="1" xml:space="preserve">
+    <value>ಒಂದು</value>
+  </data>
+  <data name="7" xml:space="preserve">
+    <value>ಏಳು</value>
+  </data>
+  <data name="6" xml:space="preserve">
+    <value>ಆರು</value>
+  </data>
+  <data name="10" xml:space="preserve">
+    <value>ಹತ್ತು</value>
+  </data>
+  <data name="3" xml:space="preserve">
+    <value>ಮೂರು</value>
+  </data>
+  <data name="2" xml:space="preserve">
+    <value>ಎರಡು</value>
+  </data>
+  <data name="Clubs" xml:space="preserve">
+    <value>ಕ್ಲಬ್ಸ್</value>
+  </data>
+  <data name="Diamonds" xml:space="preserve">
+    <value>ಡೈಮಂಡ್ಸ್</value>
+  </data>
+  <data name="Hearts" xml:space="preserve">
+    <value>ಹಾರ್ಟ್ಸ್</value>
+  </data>
+  <data name="Spades" xml:space="preserve">
+    <value>ಸ್ಪೇಡ್ಸ್</value>
+  </data>
+  <data name="SelectCardWithoutAltKeyCheckBox.Content" xml:space="preserve">
+    <value>ಆಲ್ಟ್ ಕೀ ಇಲ್ಲದ ಕಾರ್ಡ್ ಆಯ್ಕೆ ಮಾಡಿ</value>
+  </data>
+  <data name="SingleKeyToMoveCardCheckBox.Content" xml:space="preserve">
+    <value>ಕಾರ್ಡ್ ಸರಿಸಲು ಏಕೈಕ ಕೀ</value>
+  </data>
+  <data name="RecognizedStatusLabel" xml:space="preserve">
+    <value>Speech recognized:</value>
+  </data>
+  <data name="WaitingForSpeech" xml:space="preserve">
+    <value>Waiting for speech...</value>
+  </data>
+</root>
