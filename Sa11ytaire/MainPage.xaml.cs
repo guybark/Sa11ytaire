@@ -24,7 +24,7 @@ using Windows.ApplicationModel.Resources;
 using Microsoft.Xbox.Services.System;
 using Microsoft.Xbox.Services;
 
-using Sol4All.AzureCognitiveServices;
+//using Sol4All.AzureCognitiveServices;
 using Sol4All.Classes;
 using Sol4All.ViewModels;
 
@@ -476,72 +476,51 @@ namespace Sol4All
 
         public void LoadSettings()
         {
-            try
+            if (localSettings.Values.ContainsKey("ScanMode"))
             {
                 this.ViewModel.ScanModeOn = (bool)localSettings.Values["ScanMode"];
             }
-            catch (Exception)
-            {
-            }
 
-            try
+            if (localSettings.Values.ContainsKey("SwitchScanSpeed"))
             {
                 SwitchScanSpeedComboBox.SelectedValue = (double)localSettings.Values["SwitchScanSpeed"];
             }
-            catch (Exception)
+            else
             {
                 // Default to the switch control highlight moving once per second.
                 SwitchScanSpeedComboBox.SelectedValue = 1.5;
             }
 
-            try
+            if (localSettings.Values.ContainsKey("PlaySoundEffects"))
             {
                 PlaySoundEffectsCheckBox.IsChecked = (bool)localSettings.Values["PlaySoundEffects"];
             }
-            catch (Exception)
-            {
-            }
 
-            try
+            if (localSettings.Values.ContainsKey("PlayTTSNotifications"))
             {
                 PlayTTSNotificationsCheckBox.IsChecked = (bool)localSettings.Values["PlayTTSNotifications"];
             }
-            catch (Exception)
-            {
-            }
 
-            try
+            if (localSettings.Values.ContainsKey("ShowNotificationWindow"))
             {
                 ShowNotificationWindowCheckBox.IsChecked = (bool)localSettings.Values["ShowNotificationWindow"];
-            }
-            catch (Exception)
-            {
             }
 
             ShowNotificationsPanel.Visibility = (ShowNotificationWindowCheckBox.IsChecked.Value ? Visibility.Visible : Visibility.Collapsed);
 
-            try
+            if (localSettings.Values.ContainsKey("EnableAutomaticHints"))
             {
                 EnableAutomaticHintsCheckBox.IsChecked = (bool)localSettings.Values["EnableAutomaticHints"];
             }
-            catch (Exception)
-            {
-            }
 
-            try
+            if (localSettings.Values.ContainsKey("SingleKeyToMove"))
             {
                 this.ViewModel.SingleKeyToMove = (bool)localSettings.Values["SingleKeyToMove"];
             }
-            catch (Exception)
-            {
-            }
 
-            try
+            if (localSettings.Values.ContainsKey("SelectWithoutAltKey"))
             {
                 this.ViewModel.SelectWithoutAltKey = (bool)localSettings.Values["SelectWithoutAltKey"];
-            }
-            catch (Exception)
-            {
             }
         }
 
@@ -972,13 +951,13 @@ namespace Sol4All
             }
         }
 
-        VisionService visionService = new VisionService();
+        //VisionService visionService = new VisionService();
 
         private void ToggleStateOfImageProcessing()
         {
             SpeechInputStatus.Text = "";
 
-            visionService.ToggleStateOfImageProcessing(this);
+            //visionService.ToggleStateOfImageProcessing(this);
         }
 
         public void SetLookingStatus(string status)
@@ -997,7 +976,7 @@ namespace Sol4All
                 // Ctrl+S toggles the state of Azure Speech reco.
                 if (e.Key == VirtualKey.S)
                 {
-                    AzureToggleListeningForSpeech();
+                    //AzureToggleListeningForSpeech();
 
                     return;
                 }

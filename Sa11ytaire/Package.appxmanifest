@@ -22,10 +22,4 @@
       </uap:VisualElements>
     </Application>
   </Applications>
-  <Capabilities>
-    <Capability Name="internetClient" />
-    <uap:Capability Name="picturesLibrary" />
-    <DeviceCapability Name="microphone" />
-    <DeviceCapability Name="webcam" />
-  </Capabilities>
 </Package>

@@ -14,7 +14,7 @@
     <AssemblyName>Sa11ytaire</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17134.0</TargetPlatformVersion>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.17134.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
@@ -107,13 +107,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AzureCognitiveServices\BingSearch.cs" />
-    <Compile Include="AzureCognitiveServices\Bot.cs" />
-    <Compile Include="AzureCognitiveServices\LUIS.cs" />
-    <Compile Include="AzureCognitiveServices\SpeechService.cs" />
-    <Compile Include="AzureCognitiveServices\TextToSpeechService.cs" />
-    <Compile Include="AzureCognitiveServices\VisionService.cs" />
-    <Compile Include="AzureSpeech.cs" />
     <Compile Include="Classes\Card.cs" />
     <Compile Include="Classes\CardListView.cs" />
     <Compile Include="Classes\CardPileToggleButton.cs" />
@@ -418,36 +411,27 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime">
-      <Version>2.1.0</Version>
-    </PackageReference>
     <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.ComputerVision">
-      <Version>5.0.0</Version>
+      <Version>6.0.0</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction">
-      <Version>1.0.0</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.Bot.Connector.DirectLine">
-      <Version>3.0.2</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.CognitiveServices.Speech">
-      <Version>1.6.0</Version>
+      <Version>2.0.0</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.2.9</Version>
+      <Version>6.2.10</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Xbox.Live.SDK.WinRT.UWP">
       <Version>2018.6.20181010.2</Version>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
-      <Version>12.0.3-beta1</Version>
-    </PackageReference>
-    <PackageReference Include="WebSocketSharp">
-      <Version>1.0.3-rc11</Version>
+      <Version>12.0.3</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AzureCognitiveServices\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

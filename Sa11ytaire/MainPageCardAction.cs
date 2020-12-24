@@ -1,7 +1,7 @@
 ﻿// Copyright(c) Guy Barker. All rights reserved.
 // Licensed under the MIT License.
 
-using Sol4All.AzureCognitiveServices;
+//using Sol4All.AzureCognitiveServices;
 using Sol4All.Classes;
 using System;
 using System.Collections.Generic;
@@ -77,15 +77,15 @@ namespace Sol4All
                 NextCardDeck);
 
             // If we're in the middle of a bot demo, have the text announced.
-            if ((bool)ShowBotCheckBox.IsChecked && chatDirect)
-            {
-                if (ttsService == null)
-                {
-                    ttsService = new TTSService();
-                }
+            //if ((bool)ShowBotCheckBox.IsChecked && chatDirect)
+            //{
+            //    if (ttsService == null)
+            //    {
+            //        ttsService = new TTSService();
+            //    }
 
-                ttsService.SpeakNow(ttsText);
-            }
+            //    ttsService.SpeakNow(ttsText);
+            //}
         }
 
         private bool GameOver()
